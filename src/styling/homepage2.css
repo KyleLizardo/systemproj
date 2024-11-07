@@ -1,0 +1,472 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Enables smooth scrolling */
+}
+
+.logo {
+  width: 2.5rem;
+  /* Adjust size as needed */
+  height: auto;
+  /* Keep aspect ratio */
+  margin-right: 5px;
+  /* Space between the logo and other content */
+}
+
+.notif {
+  width: 40px;
+  height: auto;
+  padding: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* Space between the start and end */
+  align-items: center;
+  /* Center items vertically */
+  width: 100vw;
+  /* Full width */
+  height: 60px;
+  background-color: #36408e;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  /* Fix the navbar at the top */
+  top: 0;
+  /* Stick to the top of the viewport */
+  left: 0;
+  /* Ensure it starts from the left edge */
+  right: 0;
+  /* Ensure it stretches across the width */
+  z-index: 100;
+  /* Ensure it's on top of other elements */
+  border-bottom: 5px solid #ffd41f;
+  /* Yellow bottom border */
+}
+
+.navs {
+  position: absolute;
+  /* Absolute positioning */
+  left: 50%;
+  /* Center the nav horizontally */
+  transform: translateX(-50%);
+  /* Adjust to account for the element's width */
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: space-between;
+  /* Center the links horizontally */
+  align-items: center;
+  /* Vertically center items */
+  gap: 15px;
+  /* Space between links */
+}
+
+.nav {
+  position: relative;
+  /* Needed for the positioning of child elements */
+}
+
+.nav a {
+  position: relative;
+  /* Required for the pseudo-element */
+  color: rgb(255, 255, 255);
+  /* Default text color */
+  text-decoration: none;
+  /* Remove default underline */
+  margin: 7px;
+  font-family: "Poppins";
+  padding: 5px 0;
+  /* Space for the underline effect */
+  display: inline-block;
+  /* Required for proper spacing */
+}
+
+.nav a:hover {
+  color: #ffd41f;
+  /* Change text color on hover */
+}
+
+.nav a::after {
+  content: "";
+  /* Required for pseudo-element */
+  position: absolute;
+  /* Position it below the text */
+  left: 0;
+  bottom: -3px;
+  /* Adjust for spacing below the text */
+  width: 100%;
+  /* Full width of the text */
+  height: 2px;
+  /* Height of the underline */
+  border-radius: 5px;
+  background: #ffd41f;
+  /* Color of the underline */
+  transform: scaleX(0);
+  /* Start with no width */
+  transition: transform 0.3s ease;
+  /* Smooth transition */
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+  /* Full width on hover */
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  /* Center items vertically */
+}
+
+.start label {
+  font-size: 1em;
+  width: 30vw;
+}
+
+.sections {
+  height: 100vh;
+  width: 100vw;
+}
+
+.HomePage {
+  background-image: url("./../assets/HomePage_BG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  padding: 0 5rem;
+  font-family: "Poppins";
+}
+
+.HomePageContent {
+  padding: 15% 0% 10% 0%;
+  color: aliceblue;
+  text-align: left;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins";
+}
+
+.HomePageContent h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-right: 45rem;
+  font-family: "Poppins";
+}
+
+.HomePageContent p {
+  font-size: 1.2rem;
+  margin: 1rem 45rem 0 0;
+  line-height: 1.3;
+  font-family: "Poppins";
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ItemStatus {
+  display: flex;
+  border-top: 1px solid aliceblue;
+  width: 100%;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.LostStatus {
+  text-align: center;
+  margin-right: 30px;
+}
+
+.FoundStatus {
+  text-align: center;
+}
+
+.LostStatus h2,
+.FoundStatus h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.LostStatus span,
+.FoundStatus span {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Memo1 {
+  background-color: aliceblue;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: start;
+  padding: 0 rem;
+}
+
+.Memo1Img {
+  display: flex;
+  flex: 1;
+  text-align: start;
+  overflow: hidden;
+  height: auto;
+  max-width: 40rem;
+  padding-left: 10rem;
+}
+
+.Memo1TextContainer {
+  flex: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  padding-right: 5rem;
+  padding-left: 10rem;
+}
+
+.Memo1TextContainer h1 {
+  font-size: 2.4rem;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Memo1TextContainer p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 18px 0 0 0;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Memo2 {
+  background-color: aliceblue;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: start;
+  padding: 0 5rem;
+}
+
+.Memo2Img {
+  flex: 1;
+  text-align: end;
+  height: auto;
+  max-width: 35rem;
+}
+
+.Memo2TextContainer {
+  flex: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding-right: 10rem;
+}
+
+.Memo2TextContainer h1 {
+  font-size: 2.4rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Memo2TextContainer p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 18px 0 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Report1 {
+  background-color: aliceblue;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: start;
+  padding: 0 5%;
+}
+
+.Report1Img {
+  flex: 1;
+  text-align: start;
+  height: auto;
+  max-width: 33rem;
+  padding-left: 7rem;
+}
+
+.Report1TextContainer {
+  flex: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding-left: 12rem;
+}
+
+.Report1TextContainer h1 {
+  font-size: 2.4rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Report1TextContainer p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 18px 0 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ReportFoundbtn {
+  padding: 10px 30px;
+  width: 260px;
+  font-size: 16px;
+  color: aliceblue;
+  background-color: #36408e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ReportFoundbtn:hover {
+  background-color: #00274d;
+}
+
+.ReportFoundbtn::after {
+  content: "→";
+  font-size: 18px;
+  transition: margin-left 0.3s ease;
+}
+
+.Report2 {
+  background-color: aliceblue;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: start;
+  padding: 0 5%;
+}
+
+.Report2Img {
+  flex: 1;
+  text-align: end;
+  height: auto;
+  max-width: 33rem;
+  padding-right: 7rem;
+}
+
+.Report2TextContainer {
+  flex: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding-right: 12rem;
+}
+
+.Report2TextContainer h1 {
+  font-size: 2.4rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Report2TextContainer p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 18px 0 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ReportLostbtn {
+  padding: 10px 30px;
+  width: 260px;
+  font-size: 16px;
+  color: aliceblue;
+  background-color: #36408e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ReportLostbtn:hover {
+  background-color: #00274d;
+}
+
+.ReportLostbtn::after {
+  content: "→";
+  font-size: 18px;
+  transition: margin-left 0.3s ease;
+}
+
+.dark-blue-footer {
+  background-color: #002855; /* Dark blue color */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content h2 {
+  margin: 0 0 10px 0;
+}
+
+.footer-content a {
+  color: #86c5ff; /* Light blue for links */
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.LostStatus h2 {
+  color: white;
+}
+.FoundStatus h2 {
+  color: white;
+}
+
+.noNotificationsMessage {
+  color: black;
+}
+
+/* Style for active navbar link */
+.nav a.active {
+
+  color: #ffd41f; /* Blue or your preferred color for the active link */
+  text-decoration: underline;
+}
+
+/* Optional: Styling for the navbar links */
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff; /* Default color */
+  transition: all 0.3s;
+}
+
+.nav a:hover {
+  color: #ffd41f; /* Hover color */
+  
+}

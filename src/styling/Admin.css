@@ -1,0 +1,33 @@
+.mainpage {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebarmain {
+  display: flex; /* Added to make the sidebar a flex container */
+  flex-direction: column; /* Added to stack items vertically */
+  align-items: center; /* Added to center items horizontally */
+  width: 260px;
+  background-color: white;
+  height: 100vh;
+  min-width: 280px;
+  position: fixed; /* Keep it fixed on the left */
+}
+
+.bodymain {
+  flex-grow: 1;
+  background-color: wheat;
+  width: 100%;
+}
+
+.sidebarimage {
+  width: 150px;
+  margin-top: 20px;
+  height: auto;
+  justify-self: center;
+}
+
+.sidebarmain li {
+  margin: 0;
+}

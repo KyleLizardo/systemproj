@@ -1,0 +1,535 @@
+.mainbody {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaf5ff;
+  height: 100vh;
+  width: 250px;
+  align-items: center; /* Center items horizontally */
+}
+
+.logo2 {
+  width: 150px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sidebar li,
+ul {
+  align-self: flex-start;
+  list-style-type: none; /* Removes bullets */
+  margin-bottom: 15px;
+}
+.sidebar a {
+  color: rgb(0, 9, 29);
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: large;
+}
+.sidebar a:hover {
+  color: #35408f;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.sidebar .FontAwesomeIcon {
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take up the remaining space */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  padding: 0;
+}
+.adminnavbar {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+  height: 90px;
+  min-height: 90px;
+  border-bottom: 2px solid #e8e8e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adminnavbar p {
+  margin: 0;
+  margin-left: 30px;
+  color: black;
+  text-shadow: none;
+  font-family: "Poppins";
+}
+
+.header {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.adminnavbar input {
+  height: 45px;
+  width: 150px;
+  border-radius: 8px;
+  background-color: white;
+  border: 2.5px solid #e8e8e8;
+  margin-right: 10px;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: large;
+  letter-spacing: 10px;
+  color: black;
+}
+
+.adminnavbar input::placeholder {
+  color: #bbbcbe;
+  letter-spacing: normal;
+  font-size: medium;
+}
+
+.adminnavbar button {
+  background-color: #00aeff;
+  margin-right: 20px;
+}
+
+.dashboardbody {
+  background-color: #ffffff;
+  width: 100%;
+  flex: 1;
+  padding: 30px;
+}
+.panels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 250px;
+  background: linear-gradient(170deg, #00aeff, #35408f); /* Blue gradient */
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.panel p {
+  font-family: "Poppins";
+  text-shadow: none;
+}
+
+.panelh2 {
+  font-style: bold;
+  font-size: 90px;
+  margin: 0;
+}
+.panelp {
+  font-style: bold;
+  font-size: 28px;
+}
+.ptag {
+  text-shadow: none;
+  color: #2f2f2f;
+  font-family: "Poppins";
+  font-size: large;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.table-container {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 2px solid #35408f; /* Outer border color */
+  overflow: hidden; /* To ensure rounded corners are visible */
+}
+.table-containerAll {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 2px solid #35408f; /* Outer border color */
+  overflow: hidden; /* To ensure rounded corners are visible */
+  overflow-x: auto; /* Hide horizontal scrolling */
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse; /* Collapses table borders */
+  outline: 2px solid #35408f; /* Add outline around the table */
+}
+
+.report-table thead {
+  background-color: #35408f; /* Header background color */
+  color: white; /* Header text color */
+}
+
+.report-table th,
+.report-table td {
+  font-family: "Poppins";
+  padding: 12px; /* Cell padding */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid lightgray; /* Bottom border for cells */
+}
+.report-table th {
+  padding: 12px; /* Cell padding */
+  text-align: center; /* Align text to the left */
+  border-bottom: 1px solid lightgray; /* Bottom border for cells */
+  font-weight: normal; /* Change header text to normal (not bold) */
+  font-size: large;
+}
+.report-table td {
+  color: #464646;
+  background-color: white;
+  outline: 1px solid #35408f; /* Outline for body cells */
+}
+
+.categoryx {
+  display: flex;
+  align-items: center;
+}
+.categoryx p {
+  margin-right: 15px;
+}
+
+.categoryx button {
+  height: 30px;
+  font-family: "Poppins";
+  border-radius: 25px;
+  background-color: #35408f;
+  margin-right: 10px;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: small;
+}
+.categorybutton {
+  height: 30px;
+  font-family: "Poppins";
+  border-radius: 25px;
+  background-color: #35408f;
+  margin-right: 10px;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.adminh2 {
+  color: black;
+  font-family: "Poppins";
+  margin-right: 25px;
+  font-size: 2.8em;
+  font-weight: 500;
+}
+.containerlostdata {
+  padding: 30px;
+  width: 100%;
+}
+.lostitemcontainer {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.132);
+  justify-self: center;
+}
+
+.lostitemcontainer hr {
+  margin: 0;
+  width: 100%;
+}
+
+.lostitembody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.lostitembody1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.lostitemimg {
+  width: 180px;
+  height: 180px;
+  padding: 5px;
+  min-width: 180px;
+  width: 180px;
+  background-color: #e6e6e6;
+  border-radius: 25px;
+  align-self: center;
+}
+.lostitemtop {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.2px solid #bbbcbe;
+  align-items: center;
+}
+.lostitemcontainer label {
+  color: #2f2f2f;
+  font-family: "Poppins";
+  margin: 0;
+}
+
+label.lostitemlabel {
+  font-weight: 800px;
+  color: rgb(53, 53, 53);
+  font-size: 1.2em;
+}
+
+.lostitempanel1 {
+  display: flex;
+  width: 30%;
+  margin-right: 20px;
+  flex-direction: column;
+}
+
+.lostitempanel5 {
+  display: flex;
+  width: 50%;
+  margin-right: 20px;
+  flex-direction: column;
+}
+.lostitempanel2 {
+  display: flex;
+  width: 40%;
+  margin-right: 20px;
+  flex-direction: column;
+}
+label.lostitemlabel2 {
+  color: #bbbcbe;
+  font-size: 0.7em;
+  margin: 0;
+}
+label.lostitemlabel {
+  color: #222222;
+  font-size: 1.5em;
+  font-weight: 900px;
+}
+.lostitemicon {
+  width: 30px;
+  height: auto;
+  margin-left: 8px;
+}
+
+.lostitemimg2 {
+  width: 35px;
+  padding: 5px;
+  height: 35px;
+  background-color: #35408f;
+  margin-bottom: 5px;
+}
+
+.sidebar svg {
+  width: 30px;
+}
+
+input[type="date"] {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin: 0;
+  padding-right: 10px;
+  letter-spacing: normal; /* Reset letter spacing */
+  font-family: "Poppins"; /* Use the same font as the parent element */
+  font-weight: 500;
+  font-size: 12px;
+  border: none;
+  border-radius: 25px;
+
+  /* Remove default date arrow in WebKit browsers */
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  color: #35408f;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%2335408f" viewBox="0 0 24 24" width="24" height="24"%3E%3Cpath d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM5 20V9h14v11H5zm7-7c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/%3E%3C/svg%3E')
+    no-repeat right 10px center;
+  background-color: white; /* Input background color */
+  background-size: 24px;
+}
+.dateDiv {
+  border: 3px solid #35408f;
+  border-radius: 25px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0; /* Hide the default calendar icon */
+}
+
+.lostitemimg2 {
+  margin-left: 10px;
+}
+
+.tolabel {
+  color: #35408f;
+  margin-left: 0;
+  font-weight: 600;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* Admin.css */
+
+.checkbox-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 20px; /* Space between checkboxes */
+  padding: 10px;
+  background-color: #f9f9f9;
+  padding-left: 20px;
+}
+.showCheckbox {
+  display: flex;
+  align-items: center;
+}
+.showCheckbox p {
+  grid-column: span 4;
+  font-size: 1em;
+  margin: 0;
+  font-family: "Poppins";
+  color: #222222;
+  text-shadow: none;
+  margin-left: 20px;
+}
+
+.checkbox-container div {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+  appearance: none; /* Remove default styling */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #0056b3; /* Border color */
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+  background-color: #0056b3; /* Background color when checked */
+}
+
+.checkbox-container label {
+  margin-left: 10px; /* Space between checkbox and label */
+  font-size: 1em;
+  color: #2f2f2f;
+  cursor: pointer;
+}
+
+/* Optional: Hover effect */
+.checkbox-container input[type="checkbox"]:hover {
+  border-color: #0056b3; /* Darker border on hover */
+}
+
+.checkbox-buttons button {
+  background-color: #0056b3;
+  border-radius: 25px;
+  height: 30px;
+  font-size: medium;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+  margin: 10px;
+}
+.togglev {
+  background-color: #0056b3;
+  border-radius: 25px;
+  height: 30px;
+  font-size: medium;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+  margin: 10px;
+}
+.checkbox-buttons {
+  margin-left: 10px;
+}
+.modal {
+  display: flex;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(5px); /* For Safari support */
+}
+
+.modal-content {
+  background-color: white;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content button {
+  background-color: #0056b3;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.modal-content label,
+h3 {
+  color: black;
+}
+
+.modalBtnDiv {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button:disabled {
+  cursor: default; /* Change to the default cursor */
+  opacity: 0.5;
+  pointer-events: none; /* Optional: prevents clicking on the button */
+}
+
+.modal input {
+  height: auto;
+  padding: 5px;
+  background-color: white;
+  border: 2.5px solid #c6c6c6;
+  font-family: "Poppins";
+  color: #222222;
+  border-radius: 10px;
+}
+
+.modal p,
+h2 {
+  color: #2f2f2f;
+  align-self: center;
+  font-weight: 500;
+  font-size: large;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+#buttonclaimed {
+  display: none;
+}

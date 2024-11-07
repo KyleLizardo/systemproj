@@ -1,0 +1,62 @@
+.notifbody {
+    position: absolute; /* Position it as an overlay or dropdown */
+    top: 60px; /* Adjust as needed */
+    right: 15px; /* Adjust as needed */
+    background: white; /* Background color */
+    border: 1px solid #ccc; /* Border for the notification box */
+    padding: 20px; /* Padding around the notifications */
+    z-index: 1000; /* Ensure it's above other elements */
+    height: auto;
+    padding-top: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-height: 90vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.268);
+  }
+  .notifbody h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .notifScroll {
+    max-height: 300px; /* Limit the height */
+    overflow-y: auto; /* Allow scrolling */
+  }
+  
+  .notif1 {
+    display: flex; /* Flexbox for alignment */
+    margin-bottom: 10px; /* Space between notifications */
+  }
+  
+  .notifImg {
+    width: 40px; /* Set image size */
+    height: 40px; /* Set image size */
+    margin-right: 10px; /* Space between image and text */
+  }
+  
+  #labelxD,
+  #pxD {
+    color: black;
+    margin: 0;
+  }
+  .notif1 p {
+    font-weight: 500;
+  }
+  .innerbody {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logoutBtnxd {
+    width: 100%;
+    background-color: rgb(217, 217, 217);
+    border-top: 1px #ccc;
+    color: rgb(69, 69, 69);
+  }
+  
+  .logoutDiv {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  

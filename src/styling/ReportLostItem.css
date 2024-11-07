@@ -1,0 +1,249 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Poppins;
+}
+
+.report-lost-item-container {
+  background-image: url("./../assets/ReportPage_BG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keep background fixed */
+  min-height: 100vh; /* Ensure it fills at least the viewport height */
+  max-height: 100vh; /* Prevent height from exceeding the viewport */
+  width: 100vw;
+  color: black;
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds the viewport */
+}
+#dateFound {
+  margin-top: 5px;
+  width: 70%;
+  padding: 7px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+.step1,
+.step3,
+.step4 {
+  text-align: center;
+  border-radius: 10px;
+  width: 40%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 50px 5% 0 5%;
+}
+
+.step2 {
+  text-align: start;
+  border-radius: 10px;
+  width: 40%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 50px 5% 0 5%;
+}
+
+.step1 h2,
+.step3 h2,
+.step4 h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.step2 h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.ProgressIndi {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  background-color: #8fa1c5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: aliceblue;
+  margin: 0 10px;
+}
+
+.step.active {
+  background-color: #36408e;
+}
+
+.ReportLostContainer {
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  width: 100%; /* Adjust width percentage as needed */
+  height: auto; /* Fixed height for consistent size */
+}
+
+.ReportLostContainer label {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.ReportLostContainer ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.ReportLostContainer ul li {
+  font-size: 14px;
+}
+
+.step1 h3,
+.step3 h3,
+.step4 h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.step2 h3 {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.step1 p,
+.step2 p,
+.step4 p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+  text-shadow: none;
+  font-family: Poppins;
+}
+
+.CheckboxContainer {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CheckboxContainer input {
+  margin-right: 10px;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.PrevBtn,
+.NextBtn {
+  background-color: #36408e;
+  color: aliceblue;
+  width: 110px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.NextBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.PrevBtn:hover {
+  background-color: #00274d;
+}
+
+.OtherInput {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.FormRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.FInput,
+#ColorInp {
+  margin-top: 5px;
+  width: 70%;
+  padding: 7px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+
+.LReportLostContainer {
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-top: 125px;
+
+  width: 100%; /* Adjust width percentage as needed */
+  height: 450px; /* Fixed height for consistent size */
+}
+
+.LReportLostContainer h3 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.LReportLostContainer p {
+  font-size: 14px;
+  color: #555;
+}
+
+.image-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.otherColorInput {
+  border: 2px solid #f44336;  /* Example of a red border */
+  padding: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;  /* Light background */
+  width: 200px;  /* Set a fixed width */
+  margin-top: 5px;  /* Add space above */
+}

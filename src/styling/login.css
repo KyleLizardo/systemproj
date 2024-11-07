@@ -1,0 +1,101 @@
+html,
+body {
+  height: 100%; /* Ensure full height */
+  margin: 0; /* Reset margin */
+}
+body {
+  background-image: url("../assets/web.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center; /* Center horizontally */
+}
+
+.signup-container {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* For Chrome and Safari */
+  margin: 0;
+}
+.signup-container p {
+  align-self: center;
+  font-style: bold;
+}
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield; /* Removes the spinner */
+}
+
+.signup-container button {
+  background-color: rgb(65, 131, 194);
+  color: white;
+  width: 50%;
+  border: none; /* Optional: remove border */
+  padding: 10px 20px; /* Optional: add some padding */
+  border-radius: 25px; /* Optional: round corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+.signup-form button {
+  background-color: rgb(65, 131, 194);
+  color: white;
+  width: 70%;
+  align-self: center;
+  border: none; /* Optional: remove border */
+  padding: 10px 20px; /* Optional: add some padding */
+  border-radius: 25px; /* Optional: round corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+#signxup {
+  align-self: center;
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+.buttons {
+  border: 2.5px solid white; /* Sets border width, style, and color */
+  margin: 20px; /* Adds margin around the element */
+  border-radius: 25px;
+}
+
+.signup-form {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input {
+  font-family: "Poppins";
+  border-radius: 20px;
+  padding-left: 10px;
+  margin: 8px;
+  background-color: rgb(230, 251, 255);
+  height: 40px;
+  font-size: 0.8em;
+  width: 100%;
+  color: black;
+  border: none;
+}
+
+.passwords,
+.names,
+.emails {
+  display: flex;
+  flex-direction: row;
+}
+
+.passwords {
+  margin-bottom: 10px;
+}
+
+.signup-container h1 {
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
